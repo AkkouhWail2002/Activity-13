@@ -1,0 +1,217 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.parrent {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 0, 255, 0.2509803922)), to(rgba(8, 241, 218, 0.2509803922)));
+  background-image: linear-gradient(to right, rgba(38, 0, 255, 0.2509803922), rgba(8, 241, 218, 0.2509803922));
+  position: relative;
+}
+.parrent .child {
+  width: 65%;
+  height: 60%;
+  background-color: rgba(245, 245, 245, 0.6941176471);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 20px 1px #6c57ae;
+          box-shadow: 0px 0px 20px 1px #6c57ae;
+}
+.parrent .child #dark {
+  width: 45%;
+  height: 100%;
+  background-color: #1f086c;
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.parrent .child #sign_in, .parrent .child #sign_up {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.parrent .child #sign_in .txt1, .parrent .child #sign_up .txt1 {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.parrent .child #sign_in .txt1 h1, .parrent .child #sign_up .txt1 h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5%;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.parrent .child #sign_in .txt1 p, .parrent .child #sign_up .txt1 p {
+  text-align: center;
+  margin-bottom: 5%;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6941176471);
+  font-size: 15px;
+}
+.parrent .child #sign_in .txt1 p::first-letter, .parrent .child #sign_up .txt1 p::first-letter {
+  text-transform: uppercase;
+}
+.parrent .child #sign_in .txt1 button, .parrent .child #sign_up .txt1 button {
+  color: #fff;
+  border: 1px #fff solid;
+  padding: 2% 4%;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 12.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.parrent .child #sign_in .txt2, .parrent .child #sign_up .txt2 {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5%;
+}
+.parrent .child #sign_in .txt2 h1, .parrent .child #sign_up .txt2 h1 {
+  text-align: center;
+  color: #1f086c;
+  margin-bottom: 5%;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 .imgs, .parrent .child #sign_up .txt2 .imgs {
+  width: 80%;
+  height: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.parrent .child #sign_in .txt2 .imgs img, .parrent .child #sign_up .txt2 .imgs img {
+  width: 35px;
+  height: 35px;
+  border: 1px rgba(0, 0, 0, 0.1882352941) solid;
+  padding: 2.5%;
+  border-radius: 5px;
+}
+.parrent .child #sign_in .txt2 p, .parrent .child #sign_up .txt2 p {
+  margin-bottom: 2.5%;
+  text-align: center;
+}
+.parrent .child #sign_in .txt2 p:last-of-type, .parrent .child #sign_up .txt2 p:last-of-type {
+  cursor: pointer;
+}
+.parrent .child #sign_in .txt2 form, .parrent .child #sign_up .txt2 form {
+  height: 60%;
+  width: 100%;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit]), .parrent .child #sign_up .txt2 input:not([type=submit]) {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 5%;
+  background-color: #dddddd;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 5%;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit])::-webkit-input-placeholder, .parrent .child #sign_up .txt2 input:not([type=submit])::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit])::-moz-placeholder, .parrent .child #sign_up .txt2 input:not([type=submit])::-moz-placeholder {
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit]):-ms-input-placeholder, .parrent .child #sign_up .txt2 input:not([type=submit]):-ms-input-placeholder {
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit])::-ms-input-placeholder, .parrent .child #sign_up .txt2 input:not([type=submit])::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 input:not([type=submit])::placeholder, .parrent .child #sign_up .txt2 input:not([type=submit])::placeholder {
+  text-transform: capitalize;
+}
+.parrent .child #sign_in .txt2 input[type=submit], .parrent .child #sign_up .txt2 input[type=submit] {
+  width: 40%;
+  height: 22.5%;
+  border-radius: 12px;
+  border: none;
+  background-color: #410ed3;
+  margin-left: 30%;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  cursor: pointer;
+}
+.parrent .child #sign_in .txt2 input[type=submit]:hover, .parrent .child #sign_up .txt2 input[type=submit]:hover {
+  background-color: #663cd8;
+}
+.parrent .child #sign_up {
+  visibility: hidden;
+}

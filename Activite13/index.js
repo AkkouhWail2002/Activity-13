@@ -1,0 +1,18 @@
+document.getElementById("in").onclick=function(){
+    document.getElementById("dark").style.borderBottomLeftRadius="150px";
+    document.getElementById("dark").style.borderTopLeftRadius="150px";
+    document.getElementById("dark").style.borderBottomRightRadius="0px";
+    document.getElementById("dark").style.borderTopRightRadius="0px";
+    document.getElementById("dark").style.left="55%";
+    document.getElementById("sign_in").style.visibility="visible";
+    document.getElementById("sign_up").style.visibility="hidden";
+}
+document.getElementById("up").onclick=function(){
+    document.getElementById("dark").style.borderBottomRightRadius="150px";
+    document.getElementById("dark").style.borderTopRightRadius="150px";
+    document.getElementById("dark").style.borderBottomLeftRadius="0px";
+    document.getElementById("dark").style.borderTopLeftRadius="0px";
+    document.getElementById("dark").style.left="0%";
+    document.getElementById("sign_in").style.visibility="hidden";
+    document.getElementById("sign_up").style.visibility="visible";
+}

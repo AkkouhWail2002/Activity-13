@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+    font-family: sans-serif;
+}
+.parrent{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#2600ff40,#08f1da40);
+    position: relative;
+        .child{
+            width: 65%;
+            height: 60%;
+            background-color: #f5f5f5b1;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px 1px #6c57ae;
+            #dark{
+                width: 45%;
+                height: 100%;
+                background-color: #1f086c;
+                position: absolute;
+                top: 0%;
+                left: 55%;
+                border-top-left-radius: 150px;
+                border-bottom-left-radius: 150px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                transition-duration: 0.5s;
+            }
+
+            #sign_in{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .txt1{
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h1{
+                        text-align: center;
+                        color: #fff;
+                        margin-bottom: 5%;
+                        text-transform: capitalize;
+                        font-size: 30px;
+                    }
+                    p{
+                        text-align: center;
+                        margin-bottom: 5%;
+                        line-height: 1.5;
+                        color: #ffffffb1;
+                        font-size: 15px;
+                        &::first-letter{
+                            text-transform: uppercase;
+                        }
+                    }
+                    button{
+                        color: #fff;
+                        border: 1px #fff solid;
+                        padding: 2% 4%;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        font-size: 12.5px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .txt2{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 5%;
+                    h1{
+                        text-align: center;
+                        color: #1f086c;
+                        margin-bottom: 5%;
+                        font-size: 40px;
+                        text-transform: capitalize;
+                    }
+                    .imgs{
+                        width: 80%;
+                        height: 8%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        margin-bottom: 5%;
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            border: 1px #00000030 solid;
+                            padding: 2.5%;
+                            border-radius: 5px;
+                        }
+                    }
+                    p{
+                        margin-bottom: 2.5%;
+                        text-align: center;
+                        &:last-of-type{
+                            cursor: pointer;
+                        }
+                    }
+                    form{
+                        // background-color: red;
+                        height: 60%;
+                        width: 100%;
+                    }
+                    input{
+                        &:not([type="submit"]){
+                            width: 100%;
+                            height: 20%;
+                            margin-bottom: 5%;
+                            background-color: #dddddd;
+                            border-radius: 10px;
+                            border: none;
+                            outline: none;
+                            padding-left: 5%;
+                            &::placeholder{
+                                text-transform: capitalize;
+                            }
+                        }
+                        &[type="submit"]{
+                            width: 40%;
+                            height: 22.5%;
+                            border-radius: 12px;
+                            border: none;
+                            background-color: #410ed3;
+                            margin-left: calc((100% - 40%) / 2 );
+                            color: #fff;
+                            text-transform: uppercase;
+                            transition-duration: 0.25s;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #663cd8;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #sign_up{
+                visibility: hidden;
+                @extend #sign_in;
+            }
+    }
+}
